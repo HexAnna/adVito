@@ -1,0 +1,15 @@
+{% extends 'main/base.html' %}
+
+{% block title %}
+{{ title }}
+{% endblock %}
+
+{% block content %}
+    <h1>Продавцы</h1>
+    {% if profil %}
+        {% for el in profil %}
+        {% endfor %}
+    {% else %}
+        <p>Здесь пока ничего нет :-(</p>
+    {% endif %}
+{% endblock %}
